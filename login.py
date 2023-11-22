@@ -104,14 +104,14 @@ def set_background(png_file):
     page_bg_img = '''
     <style>
     .stApp {
-    background-image: url("data:image/png;base64,%s");
+    background-image: url("data:image/jpeg;base64,%s");
     background-size: cover;
     }
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
-set_background('./l.jpg')
+set_background('./l.jpeg')
 # Create a page router
 def page_router():
     if st.session_state.page == "login_page":

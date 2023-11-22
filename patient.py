@@ -216,14 +216,14 @@ def set_background(png_file):
     page_bg_img = '''
     <style>
     .stApp {
-    background-image: url("data:image/avif;base64,%s");
+    background-image: url("data:image/jpeg;base64,%s");
     background-size: cover;
     }
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
-set_background('./p.avif')
+set_background('./p.jpeg')
  
 st.sidebar.title("Navigation")
 args = parse_args()
