@@ -1,10 +1,10 @@
 # Hospital-Management-System
 ## Open MySQL and create database 
-'''
+'''ruby
    CREATE DATABASE hms;
    '''
 ## change the database to hms using "use hms;" and create tables using the below commands in MySQL
-'''
+'''ruby
    CREATE TABLE login (
     ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255) NOT NULL,
