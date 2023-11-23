@@ -1,7 +1,10 @@
 # Hospital-Management-System
 ## Open MySQL and create database 
+'''
    CREATE DATABASE hms;
+   '''
 ## change the database to hms using "use hms;" and create tables using the below commands in MySQL
+'''
    CREATE TABLE login (
     ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255) NOT NULL,
@@ -9,8 +12,8 @@
     patient_id VARCHAR(255),
     patient_doctor CHAR(100) NOT NULL
 );
-
-
+'''
+'''
 CREATE TABLE patient (
     ID varchar(50) NOT NULL,
     Name char(100) NOT NULL,
@@ -21,7 +24,8 @@ CREATE TABLE patient (
     Email varchar(30),
     PRIMARY KEY (ID)
 );
-
+'''
+'''
 CREATE TABLE doctor (
     D_id varchar(100) NOT NULL,
     D_name varchar(200),
@@ -34,9 +38,9 @@ CREATE TABLE doctor (
     FOREIGN KEY (Hospital_id) REFERENCES hospital(H_id) ON DELETE CASCADE
 );
 
+'''
 
-
-
+'''
 CREATE TABLE medical_history (
     P_id char(100) NOT NULL,
     P_name varchar(100),
@@ -45,7 +49,8 @@ CREATE TABLE medical_history (
     Date date,
     PRIMARY KEY (P_id)
 );
-
+'''
+'''
 CREATE TABLE appointment (
     P_ID varchar(100) NOT NULL,
     P_NAME char(100),
@@ -58,7 +63,8 @@ CREATE TABLE appointment (
     FOREIGN KEY (D_name) REFERENCES doctor(D_name) ON DELETE CASCADE,
     FOREIGN KEY (H_name) REFERENCES hospital(H_name) ON DELETE CASCADE
 );
-
+'''
+'''
 CREATE TABLE hospital (
     H_name varchar(100) NOT NULL,
     H_id varchar(100) PRIMARY KEY,
@@ -66,7 +72,8 @@ CREATE TABLE hospital (
     Address varchar(100),
     contact bigint NOT NULL
 );
-
+'''
+'''
 CREATE TABLE payment (
     payment_id varchar(1000) NOT NULL,
     P_name varchar(100),
@@ -77,4 +84,4 @@ CREATE TABLE payment (
     time time,
     Paid char(3)
 );
-  
+ ''' 
