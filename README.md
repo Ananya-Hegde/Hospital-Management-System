@@ -2,8 +2,9 @@
 ## Open MySQL and create database 
 ```ruby
    CREATE DATABASE hms;
+   USE hms;
    ```
-## change the database to hms using "use hms;" and create tables using the below commands in MySQL
+## Create tables using the below commands in MySQL
 ```ruby
    CREATE TABLE login (
     ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -145,11 +146,12 @@ END //
 
 DELIMITER ;
 ```
-### Install streamlit using the command 
+### Open vs code terminal or any other terminal and run the following commands
+### Install streamlit using the command:
 ```ruby
 pip install streamlit
 ``` 
-### run the files using the given command
+### run the files using the given command:
 ```ruby
 streamlit run login.py
 ```
